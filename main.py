@@ -1,6 +1,9 @@
-def sum (a,b):
-    return a + b
-if __name__ == "__main__":
-    a = 10
-    b = 20
-    print("sum of a and b is: ", sum(a,b))
+def ucln(a, b):
+    while b != 0:
+        a, b = b, a % b
+    return a
+
+a = int(input("Nhap so a: "))
+b = int(input("Nhap so b: "))
+
+print("Uoc chung lon nhat la:", ucln(a, b))
